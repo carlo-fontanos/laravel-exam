@@ -13,8 +13,5 @@
 
 
 Route::get('/', 'PageController@index');
-Route::get('about-us', 'PageController@about');
-Route::get('contact-us', 'PageController@contact');
-
-Route::group(['prefix' => 'blog'], function () {
-});
+Route::post('/add', 'PageController@add');
+Route::post('/show', 'PageController@show');
